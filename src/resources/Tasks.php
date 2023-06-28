@@ -21,7 +21,10 @@ class Tasks extends Resources
 			'forceComplete' => ['method' => 'POST', 'path' => '/tasks/:taskId/complete'],
 			'batchCreate' => ['method' => 'POST', 'path' => '/tasks/batch'],
 			'autoAssign' => ['method' => 'POST', 'path' => '/tasks/autoAssign'],
-			'matchMetadata' => ['method' => 'POST', 'path' => '/tasks/metadata']
+			'matchMetadata' => ['method' => 'POST', 'path' => '/tasks/metadata'],
+
+			//adding batch create async
+			'batchCreateAsync' => ['method'=>'POST, 'path' => '/tasks/batch-async']
 		]);
 	}
 }
